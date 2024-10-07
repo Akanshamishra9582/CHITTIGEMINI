@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.main {
+  flex: 1;
+  background-color: black;
+  background-image: url(back.jpg);
+  background-repeat:no-repeat; /* Prevents the image from repeating */
+  background-size:contain; 
+  color: black;
+  position :relative;
+    /* Ensure the image is responsive */
+  height: auto;
+}
+
+.design {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  fill: transparent;
+  stroke: #888;
+  stroke-width: 2;
+}
+
+.character {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  height: 300px;
+}
+
+.search-bar {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  cursor: pointer;
+}
